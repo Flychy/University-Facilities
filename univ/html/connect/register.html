@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" This is an awsome website">
+        <title>Register</title>
+        <style>
+            /* Add some basic styling */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #9CC3D5FF;
+                font-family: Arial, sans-serif;
+            }
+            /* Style the form container */
+            .form-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                padding: 20px;
+            }
+            /* Style the form elements */
+            form {
+                background-color: #fff;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                width: 400px;
+                text-align: center;
+            }
+            form h1, form h6 {
+                color: #0063B2FF;
+                margin-bottom: 30px;
+            }
+            form hr {
+                border: 0;
+                border-top: 1px solid #0063B2FF;
+                margin: 30px 0;
+                width: 100%;
+            }
+            form p {
+                color: #0063B2FF;
+                margin-bottom: 10px;
+            }
+            form input[type="text"], form input[type="password"] {
+                border: none;
+                border-bottom: 1px solid #0063B2FF;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            form input[type="submit"] {
+                background-color: #0063B2FF;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            form input[type="submit"]:hover {
+                background-color: #005099;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form action="../../php/connect/try.php" method="post">
+                <h1><b>UPBInsider</b></h1>
+                <h6>See the truth about our University!</h6>
+                <hr>
+                </br>
+
+                <h3>Register</h3>
+                <p>Username</p>
+                <input type="text" name="username" required>
+                <p>Password</p>
+                <input type="password" name="password" required>
+                </br>
+                </br>
+                <input type="submit" value="submit">
+                </br>
+            </form>
+        </div>
+    </body>
+</html>
